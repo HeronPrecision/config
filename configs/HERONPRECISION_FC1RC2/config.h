@@ -24,15 +24,17 @@
 #define FC_TARGET_MCU     STM32H743 //actually h753
 
 #define BOARD_NAME        HERONPRECISION_FC1RC2
-#define MANUFACTURER_ID   HRNP
+#define MANUFACTURER_ID   HRON
 
 #define USE_GYRO
 #define USE_ACC
 #define USE_ACCGYRO_BMI270
 #define USE_MAG
 #define USE_MAG_LIS3MDL
-#define USE_BARO_BMP388
+#define USE_BARO
+#define USE_BARO_SPI_BMP388
 #define USE_MAX7456
+#define MAX_SUPPORTED_MOTORS 12 //experimental
 
 #define BEEPER_PIN           PE1
 #define MOTOR1_PIN           PE9 
@@ -43,10 +45,10 @@
 #define MOTOR6_PIN           PD13
 #define MOTOR7_PIN           PD14
 #define MOTOR8_PIN           PD15
-#define MOTOR9_PIN           PA0 //schem as m13
-#define MOTOR10_PIN          PA1
-#define MOTOR11_PIN          PB10
-#define MOTOR12_PIN          PB11
+#define SERVO1_PIN           PA0 //schem as m13
+#define SERVO2_PIN          PA1
+#define SERVO3_PIN          PB10
+#define SERVO4_PIN          PB11
 // #define LED_STRIP_PIN     PE1 //used as beeper
 #define UART1_TX_PIN         PA2 //real uart 2
 #define UART2_TX_PIN         PB9 //real uart 4
@@ -88,8 +90,9 @@
 #define SDIO_D2_PIN          PC10
 #define SDIO_D3_PIN          PC11
 
-#define PINIO1_PIN           PE10 // analog video camera picker
-#define PINIO2_PIN           PB11
+#define PINIO1_PIN           PC13 //M9-10 - pull down to enable
+#define PINIO2_PIN           PE7 //M11-12 - pull down to enable
+#define PINIO3_PIN           PE10 // analog video camera picker - high for 1
 #define BARO_CS_PIN          PE3
 #define MAG_CS_PIN           PE4
 #define MAX7456_SPI_CS_PIN   PA4
@@ -127,7 +130,7 @@
 
 #define USE_SPI_MAG
 #define MAG_SPI_INSTANCE SPI4
-#define USE_BARO
+#define USE_SPI_BARO
 #define BARO_SPI_INSTANCE SPI4
 
 #define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_SDCARD
@@ -141,10 +144,10 @@
 #define SDIO_USE_4BIT 1
 #define SYSTEM_HSE_MHZ 25
 #define MAX7456_SPI_INSTANCE SPI6
-#define PINIO1_CONFIG 129
-#define PINIO2_CONFIG 129
-#define PINIO1_BOX 0
-#define PINIO2_BOX 40
+#define PINIO1_CONFIG 1
+#define PINIO2_CONFIG 1
+//#define PINIO1_BOX 0
+//#define PINIO2_BOX 40
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 //#define GYRO_1_ALIGN_YAW 1800
