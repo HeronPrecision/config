@@ -94,7 +94,7 @@
 #define PINIO2_PIN           PE7 //M11-12 - pull down to enable
 #define PINIO3_PIN           PE10 // analog video camera picker - high for 1
 #define BARO_CS_PIN          PE3
-#define MAG_CS_PIN           PE4
+#define COMPASS_CS_PIN       PE4
 #define MAX7456_SPI_CS_PIN   PA4
 #define COMPASS_EXTI_PIN     PE15
 #define GYRO_1_EXTI_PIN      PB1
