@@ -28,7 +28,9 @@
 
 #define USE_GYRO
 #define USE_ACC
-#define USE_ACCGYRO_BMI270
+// #define USE_ACCGYRO_BMI270
+#define USE_ACC_SPI_ICM42688P
+#define USE_GYRO_SPI_ICM42688P
 #define USE_MAG
 #define USE_MAG_LIS3MDL
 #define USE_BARO
@@ -37,7 +39,7 @@
 #define MAX_SUPPORTED_MOTORS 12 //experimental
 
 #define BEEPER_PIN           PE1
-#define MOTOR1_PIN           PE9 
+#define MOTOR1_PIN           PE9
 #define MOTOR2_PIN           PE11
 #define MOTOR3_PIN           PE13
 #define MOTOR4_PIN           PE14
