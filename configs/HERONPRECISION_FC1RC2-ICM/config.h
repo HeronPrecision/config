@@ -151,10 +151,10 @@
 //#define PINIO2_BOX 40
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
 #define GYRO_1_SPI_INSTANCE SPI1
-#define GYRO_1_ALIGN CW180_DEG
-//#define GYRO_1_ALIGN_YAW 1800
+#define GYRO_1_ALIGN CW270_DEG
+// #define GYRO_1_ALIGN_YAW 2700
 #define GYRO_2_SPI_INSTANCE SPI1
-#define GYRO_2_ALIGN CW270_DEG
+// #define GYRO_2_ALIGN CW270_DEG
 //#define GYRO_2_ALIGN_YAW 2700
 
 //todo: gpio for can switch, gyro orientation, figure out the DMA stuff, ADC calculation, better GPIO settings, verify beeper is safe
