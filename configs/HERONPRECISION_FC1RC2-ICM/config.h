@@ -23,13 +23,12 @@
 
 #define FC_TARGET_MCU     STM32H743 //actually h753
 
-#define BOARD_NAME        HERONPRECISION_FC1RC2
+#define BOARD_NAME        HERONPRECISION_FC1RC2-ICM
 #define MANUFACTURER_ID   HRON
 
-#define USE_GYRO
 #define USE_ACC
-// #define USE_ACCGYRO_BMI270
 #define USE_ACC_SPI_ICM42688P
+#define USE_GYRO
 #define USE_GYRO_SPI_ICM42688P
 #define USE_MAG
 #define USE_MAG_LIS3MDL
@@ -120,7 +119,7 @@
     TIMER_PIN_MAP( 11, PB11, 2, 11)
 
 
-#define SPI1_TX_DMA_OPT    13
+// #define SPI1_TX_DMA_OPT    13
 #define ADC1_DMA_OPT        8
 #define ADC3_DMA_OPT        9
 #define TIMUP1_DMA_OPT      2
@@ -150,6 +149,7 @@
 #define PINIO2_CONFIG 1
 //#define PINIO1_BOX 0
 //#define PINIO2_BOX 40
+#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 //#define GYRO_1_ALIGN_YAW 1800
