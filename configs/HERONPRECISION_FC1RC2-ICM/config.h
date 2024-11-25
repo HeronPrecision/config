@@ -93,7 +93,9 @@
 
 #define PINIO1_PIN           PC13 //M9-10 - pull down to enable
 #define PINIO2_PIN           PE7 //M11-12 - pull down to enable
-#define PINIO3_PIN           PE10 // analog video camera picker - high for 1
+#define PINIO3_PIN           PD10 //route picker, high for motors
+#define PINIO4_PIN           PD11 //route picker, high for motors
+#define PINIO5_PIN           PE10 // analog video camera picker - high for 1
 #define BARO_CS_PIN          PE3
 #define MAG_CS_PIN           PE4
 #define MAX7456_SPI_CS_PIN   PA4
@@ -145,8 +147,11 @@
 #define SDIO_USE_4BIT 1
 #define SYSTEM_HSE_MHZ 25
 #define MAX7456_SPI_INSTANCE SPI6
-#define PINIO1_CONFIG 1
-#define PINIO2_CONFIG 1
+#define PINIO1_CONFIG 129 //set low as enabled
+#define PINIO2_CONFIG 129 //set low as enabled
+#define PINIO3_CONFIG 1 //set as high to select motors enabled
+#define PINIO4_CONFIG 1 //set as high to select motors enabled
+#define PINIO5_CONFIG 1 //default high to cam 1
 //#define PINIO1_BOX 0
 //#define PINIO2_BOX 40
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
