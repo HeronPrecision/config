@@ -37,7 +37,7 @@
 #define MAX_SUPPORTED_MOTORS 12 //experimental
 
 #define BEEPER_PIN           PE1
-#define MOTOR1_PIN           PE9 
+#define MOTOR1_PIN           PE9
 #define MOTOR2_PIN           PE11
 #define MOTOR3_PIN           PE13
 #define MOTOR4_PIN           PE14
@@ -50,17 +50,17 @@
 #define SERVO3_PIN          PB10
 #define SERVO4_PIN          PB11
 // #define LED_STRIP_PIN     PE1 //used as beeper
-#define UART1_TX_PIN         PA2 //real uart 2
-#define UART2_TX_PIN         PB9 //real uart 4
+#define UART1_TX_PIN         PB14
+#define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PD8
-#define UART4_TX_PIN         PB14 //real uart 1
+#define UART4_TX_PIN         PB9 //real uart 1
 #define UART6_TX_PIN         PC6
 #define UART7_TX_PIN         PE8
 //#define UART8_TX_PIN       PE1 //used as beeper
-#define UART1_RX_PIN         PA3 //real uart 2
-#define UART2_RX_PIN         PB8 //real uart 4
+#define UART1_RX_PIN         PA10
+#define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PD9
-#define UART4_RX_PIN         PA10
+#define UART4_RX_PIN         PB8
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PA8
 #define UART8_RX_PIN         PE0
