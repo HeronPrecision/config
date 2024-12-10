@@ -51,17 +51,17 @@
 #define SERVO3_PIN          PB10
 #define SERVO4_PIN          PB11
 // #define LED_STRIP_PIN     PE1 //used as beeper
-#define UART1_TX_PIN         PA2 //real uart 2
-#define UART2_TX_PIN         PB9 //real uart 4
+#define UART1_TX_PIN         PB14
+#define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PD8
-#define UART4_TX_PIN         PB14 //real uart 1
+#define UART4_TX_PIN         PB9
 #define UART6_TX_PIN         PC6
 #define UART7_TX_PIN         PE8
 //#define UART8_TX_PIN       PE1 //used as beeper
-#define UART1_RX_PIN         PA3 //real uart 2
-#define UART2_RX_PIN         PB8 //real uart 4
+#define UART1_RX_PIN         PA10
+#define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PD9
-#define UART4_RX_PIN         PA10
+#define UART4_RX_PIN         PB8
 #define UART6_RX_PIN         PC7
 #define UART7_RX_PIN         PA8
 #define UART8_RX_PIN         PE0
@@ -97,7 +97,7 @@
 #define PINIO4_PIN           PD11 //route picker, high for motors
 #define PINIO5_PIN           PE10 // analog video camera picker - high for 1
 #define BARO_CS_PIN          PE3
-#define MAG_CS_PIN           PE4
+#define COMPASS_CS_PIN       PE4
 #define MAX7456_SPI_CS_PIN   PA4
 #define COMPASS_EXTI_PIN     PE15
 #define GYRO_1_EXTI_PIN      PB1
