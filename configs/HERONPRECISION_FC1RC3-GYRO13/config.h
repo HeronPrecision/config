@@ -23,7 +23,7 @@
 
 #define FC_TARGET_MCU     STM32H743 //actually h753
 
-#define BOARD_NAME        HERONPRECISION_FC1RC2-ICM
+#define BOARD_NAME        HERONPRECISION_FC1RC3-GYRO13 //Gyro 3 is used as gyro 2
 #define MANUFACTURER_ID   HRON
 
 #define USE_ACC
