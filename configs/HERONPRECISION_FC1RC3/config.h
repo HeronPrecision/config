@@ -149,11 +149,11 @@
 #define SDIO_USE_4BIT 1
 #define SYSTEM_HSE_MHZ 25
 #define MAX7456_SPI_INSTANCE SPI6
-#define PINIO1_CONFIG 1 //set low as enabled
-#define PINIO2_CONFIG 1 //set low as enabled
-#define PINIO3_CONFIG 129 //set as high to select motors enabled
-#define PINIO4_CONFIG 129 //set as high to select motors enabled
-#define PINIO5_CONFIG 129 //default high to cam 1
+#define PINIO1_CONFIG 1 //set default low as enabled
+#define PINIO2_CONFIG 1 //set default low as enabled
+#define PINIO3_CONFIG 129 //set default high to select motors enabled
+#define PINIO4_CONFIG 129 //set default high to select motors enabled
+#define PINIO5_CONFIG 129 //set default high to cam 1
 //#define PINIO1_BOX 0
 //#define PINIO2_BOX 40
 #define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
