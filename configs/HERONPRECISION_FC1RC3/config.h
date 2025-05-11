@@ -36,6 +36,8 @@
 //#define USE_BARO_SPI_ICP20100
 #define USE_MAX7456
 #define MAX_SUPPORTED_MOTORS 12 //experimental
+//#define PINIO_COUNT 6
+#define GYRO_COUNT 3
 
 #define BEEPER_PIN           PE1
 #define MOTOR1_PIN           PE9
@@ -98,12 +100,16 @@
 #define PINIO3_PIN           PD10 //route picker, high for motors
 #define PINIO4_PIN           PD11 //route picker, high for motors
 #define PINIO5_PIN           PE10 // analog video camera picker - high for 1
+#define PINIO6_PIN           PE12 // TX6 enable - high for gnd
 #define BARO_CS_PIN          PE3
 #define MAX7456_SPI_CS_PIN   PA4
 //define GYRO_CLOCK_PIN      PB0 //timer 3 ch 3
 #define GYRO_1_EXTI_PIN      PB1
 #define GYRO_2_EXTI_PIN      PD5
 #define GYRO_3_EXTI_PIN      PE15
+#define GYRO_1_CLKIN_PIN      PB0
+#define GYRO_2_CLKIN_PIN      PB0
+#define GYRO_3_CLKIN_PIN      PB0
 #define GYRO_1_CS_PIN        PB2
 #define GYRO_2_CS_PIN        PB15
 #define GYRO_3_CS_PIN        PE4
@@ -154,9 +160,10 @@
 #define PINIO3_CONFIG 129 //set default high to select motors enabled
 #define PINIO4_CONFIG 129 //set default high to select motors enabled
 #define PINIO5_CONFIG 129 //set default high to cam 1
+#define PINIO6_CONFIG 129 //set default high for GND
 //#define PINIO1_BOX 0
 //#define PINIO2_BOX 40
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH
+#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_ALL
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 #define GYRO_2_SPI_INSTANCE SPI1
