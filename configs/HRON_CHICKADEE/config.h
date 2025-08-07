@@ -159,7 +159,7 @@
 #define PINIO4_CONFIG 129 //set default high to select motors enabled
 #define PINIO5_CONFIG 129 //set default high to cam 1
 #define PINIO6_CONFIG 129 //set default high for GND
-#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_BOTH //GYRO_CONFIG_USE_GYRO_ALL
+#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_ALL //GYRO_CONFIG_USE_GYRO_BOTH
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 #define GYRO_2_SPI_INSTANCE SPI1
