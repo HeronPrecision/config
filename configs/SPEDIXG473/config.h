@@ -21,39 +21,39 @@
 
 #pragma once
 
-#define FC_TARGET_MCU     STM32F7X2
+#define FC_TARGET_MCU     STM32G47X
 
-#define BOARD_NAME        MERAKRCF722
-#define MANUFACTURER_ID   MERA
+#define BOARD_NAME        SPEDIXG473
+#define MANUFACTURER_ID   SPDX
 
 #define USE_ACC
-#define USE_ACC_SPI_MPU6000
+#define USE_ACC_SPI_ICM42688P
 #define USE_GYRO
-#define USE_GYRO_SPI_MPU6000
+#define USE_GYRO_SPI_ICM42688P
+#define USE_FLASH
+#define USE_FLASH_M25P16
+#define USE_BARO
+#define USE_BARO_BMP280
+#define USE_BARO_DPS310
 #define USE_MAX7456
 
-#define BEEPER_PIN           PC14
-#define MOTOR1_PIN           PC6
-#define MOTOR2_PIN           PC7
-#define MOTOR3_PIN           PA0
-#define MOTOR4_PIN           PA1
-#define MOTOR5_PIN           PB0
-#define MOTOR6_PIN           PB1
-#define RX_PPM_PIN           PC8
-#define LED_STRIP_PIN        PB8
+#define BEEPER_PIN           PA8
+#define MOTOR1_PIN           PB1
+#define MOTOR2_PIN           PB0
+#define MOTOR3_PIN           PB9
+#define MOTOR4_PIN           PB6
+#define LED_STRIP_PIN        PB2
 #define UART1_TX_PIN         PA9
 #define UART2_TX_PIN         PA2
 #define UART3_TX_PIN         PB10
 #define UART4_TX_PIN         PC10
-#define UART5_TX_PIN         PC12
 #define UART1_RX_PIN         PA10
 #define UART2_RX_PIN         PA3
 #define UART3_RX_PIN         PB11
 #define UART4_RX_PIN         PC11
-#define UART5_RX_PIN         PD2
-#define I2C1_SCL_PIN         PB6
+#define I2C1_SCL_PIN         PA15
 #define I2C1_SDA_PIN         PB7
-#define LED0_PIN             PC13
+#define LED0_PIN             PC6
 #define SPI1_SCK_PIN         PA5
 #define SPI2_SCK_PIN         PB13
 #define SPI3_SCK_PIN         PB3
@@ -63,37 +63,40 @@
 #define SPI1_SDO_PIN         PA7
 #define SPI2_SDO_PIN         PB15
 #define SPI3_SDO_PIN         PB5
-#define CAMERA_CONTROL_PIN   PB9
-#define ADC_VBAT_PIN         PC2
-#define ADC_RSSI_PIN         PC3
-#define ADC_CURR_PIN         PC1
-#define FLASH_CS_PIN         PA4
-#define MAX7456_SPI_CS_PIN   PA15
+#define PINIO1_PIN           PC14
+#define PINIO2_PIN           PC15
+#define ADC_VBAT_PIN         PA1
+#define ADC_CURR_PIN         PA0
+#define FLASH_CS_PIN         PC13
+#define MAX7456_SPI_CS_PIN   PB12
 #define GYRO_1_EXTI_PIN      PC4
-#define GYRO_1_CS_PIN        PB12
+#define GYRO_1_CS_PIN        PA4
 
 #define TIMER_PIN_MAPPING \
-    TIMER_PIN_MAP( 0, PC8 , 2,  0) \
-    TIMER_PIN_MAP( 1, PC6 , 1,  0) \
-    TIMER_PIN_MAP( 2, PC7 , 1,  0) \
-    TIMER_PIN_MAP( 3, PA0 , 2,  0) \
-    TIMER_PIN_MAP( 4, PA1 , 2,  0) \
-    TIMER_PIN_MAP( 5, PB0 , 2,  0) \
-    TIMER_PIN_MAP( 6, PB1 , 1,  0) \
-    TIMER_PIN_MAP( 7, PB8 , 1,  0) \
-    TIMER_PIN_MAP( 8, PB9 , 2, -1)
+    TIMER_PIN_MAP( 0, PB1, 1,  1) \
+    TIMER_PIN_MAP( 1, PB0, 1,  2) \
+    TIMER_PIN_MAP( 2, PB9, 2,  3) \
+    TIMER_PIN_MAP( 3, PB6, 2,  4) \
+    TIMER_PIN_MAP( 4, PB2, 1,  5) \
+    TIMER_PIN_MAP( 5, PA8, 1, -1)
 
+#define ADC1_DMA_OPT         0
 
-#define ADC1_DMA_OPT        1
+#define PINIO1_BOX           40
+#define PINIO2_BOX           41
+#define PINIO2_CONFIG        1
+#define BOX_USER2_NAME       "VTXPWR"
 
-#define MAG_I2C_INSTANCE I2CDEV_1
-#define BARO_I2C_INSTANCE        I2CDEV_1
-#define DEFAULT_BLACKBOX_DEVICE     BLACKBOX_DEVICE_FLASH
-#define DEFAULT_DSHOT_BURST DSHOT_DMAR_ON
+#define BARO_I2C_INSTANCE	 I2CDEV_1
+#define MAG_I2C_INSTANCE	 I2CDEV_1
+#define DEFAULT_BLACKBOX_DEVICE BLACKBOX_DEVICE_FLASH
+#define DEFAULT_DSHOT_BURST  DSHOT_DMAR_OFF
+#define DEFAULT_DSHOT_BITBANG DSHOT_BITBANG_ON
 #define DEFAULT_CURRENT_METER_SOURCE CURRENT_METER_ADC
 #define DEFAULT_VOLTAGE_METER_SOURCE VOLTAGE_METER_ADC
-#define DEFAULT_CURRENT_METER_SCALE 179
 #define BEEPER_INVERTED
-#define MAX7456_SPI_INSTANCE SPI3
-#define FLASH_SPI_INSTANCE SPI1
-#define GYRO_1_SPI_INSTANCE SPI2
+#define SYSTEM_HSE_MHZ 8
+#define MAX7456_SPI_INSTANCE SPI2
+#define FLASH_SPI_INSTANCE   SPI3
+#define GYRO_1_SPI_INSTANCE  SPI1
+#define DEFAULT_ALIGN_BOARD_YAW 315
