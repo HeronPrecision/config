@@ -95,6 +95,7 @@
 #define SDIO_D2_PIN          PC10
 #define SDIO_D3_PIN          PC11
 
+
 #define PINIO1_PIN           PC13 //M9-10 - pull down to enable
 #define PINIO2_PIN           PE7 //M11-12 - pull down to enable
 #define PINIO3_PIN           PD10 //route picker, high for motors
@@ -152,7 +153,7 @@
 #define BEEPER_INVERTED
 #define SDCARD_DETECT_PIN NONE
 #define SDIO_DEVICE SDIODEV_1
-#define SDIO_USE_4BIT 1
+//#define SDIO_USE_4BIT 1 -- causes hangs in BF 4.6
 #define SYSTEM_HSE_MHZ 25
 #define MAX7456_SPI_INSTANCE SPI6
 #define PINIO1_CONFIG 1 //set default low as enabled
