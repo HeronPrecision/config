@@ -96,12 +96,12 @@
 #define SDIO_D3_PIN          PC11
 
 
-#define PINIO1_PIN           PC13 //M9-10 - pull down to enable
-#define PINIO2_PIN           PE7 //M11-12 - pull down to enable
-#define PINIO3_PIN           PD10 //route picker, high for motors
-#define PINIO4_PIN           PD11 //route picker, high for motors
-#define PINIO5_PIN           PE10 // analog video camera picker - high for 1
-#define PINIO6_PIN           PE12 // TX6 enable - high for gnd
+#define PINIO1_PIN           PE10 // analog video camera picker - high for 1
+#define PINIO2_PIN           PE12 // TX6 enable - high for gnd
+#define PINIO3_PIN           PC13 //M9-10 - pull down to enable
+#define PINIO4_PIN           PE7 //M11-12 - pull down to enable
+#define PINIO5_PIN           PD10 //route picker, high for motors
+#define PINIO6_PIN           PD11 //route picker, high for motors
 #define BARO_CS_PIN          PE3
 #define MAX7456_SPI_CS_PIN   PA4
 #define GYRO_1_EXTI_PIN      PB1
@@ -156,13 +156,12 @@
 //#define SDIO_USE_4BIT 1 -- causes hangs in BF 4.6
 #define SYSTEM_HSE_MHZ 25
 #define MAX7456_SPI_INSTANCE SPI6
-#define PINIO1_CONFIG 1 //set default low as enabled
-#define PINIO2_CONFIG 1 //set default low as enabled
-#define PINIO3_CONFIG 129 //set default high to select motors enabled
-#define PINIO4_CONFIG 129 //set default high to select motors enabled
-#define PINIO5_CONFIG 129 //set default high to cam 1
-#define PINIO6_CONFIG 129 //set default high for GND
-//#define DEFAULT_GYRO_TO_USE GYRO_CONFIG_USE_GYRO_ALL //GYRO_CONFIG_USE_GYRO_BOTH
+#define PINIO1_CONFIG 129 //set default high to cam 1
+#define PINIO2_CONFIG 129 //set default high for GND
+#define PINIO3_CONFIG 1 //set default low as enabled
+#define PINIO4_CONFIG 1 //set default low as enabled
+#define PINIO5_CONFIG 129 //set default high to select motors enabled
+#define PINIO6_CONFIG 129 //set default high to select motors enabled
 #define GYRO_1_SPI_INSTANCE SPI1
 #define GYRO_1_ALIGN CW180_DEG
 #define GYRO_2_SPI_INSTANCE SPI1
