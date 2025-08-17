@@ -157,6 +157,8 @@
 #define SYSTEM_HSE_MHZ 25
 #define MAX7456_SPI_INSTANCE SPI6
 #define PINIO1_CONFIG 129 //set default high to cam 1
+#define PINIO1_BOX 40
+#define BOX_USER1_NAME                      "CAM 1,2"
 #define PINIO2_CONFIG 129 //set default high for GND
 #define PINIO3_CONFIG 1 //set default low as enabled
 #define PINIO4_CONFIG 1 //set default low as enabled
